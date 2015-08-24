@@ -4,7 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def hello
-    render text: \u{00A1} + "hello, world!"
+    render text: "\u{A1}Holla Mundo!"
+  end
+
+  def goodBay
+    render text: "Goodbay Mundo"
   end
 
 end
